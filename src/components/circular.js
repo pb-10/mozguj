@@ -7,11 +7,9 @@ const SemiCircle = styled.div`
   /* prettier stop */
   ${props => {
     if (props.left) {
-      return `border-top-right-radius: 100%; border-bottom-right-radius: 100%; right:0;top: -10vh;height: 120vh;`
-    } else if (props.home) {
-      return `border-top-left-radius: 100%; border-bottom-left-radius: 100%; left:0;top: -5vh;height: 110vh;`
+      return `border-top-right-radius: 100%; border-bottom-right-radius: 100%; right:0;top: -5vh;height: 110vh;`
     } else {
-      return `border-top-left-radius: 100%; border-bottom-left-radius: 100%; left:0;top: -10vh;height: 120vh;`
+      return `border-top-left-radius: 100%; border-bottom-left-radius: 100%; left:0;top: -5vh;height: 110vh;`
     }
   }};
   ${props => {

@@ -1,9 +1,7 @@
 import React from "react"
 import { makeStyles } from "@material-ui/core/styles"
-import AppBar from "@material-ui/core/AppBar"
-import Toolbar from "@material-ui/core/Toolbar"
-import Typography from "@material-ui/core/Typography"
-import Button from "@material-ui/core/Button"
+import { AppBar, Toolbar, Typography, Button } from "@material-ui/core"
+import { Link } from "gatsby"
 import styled from "styled-components"
 import "./layout.css"
 
@@ -17,13 +15,15 @@ const useStyles = makeStyles(theme => ({
 }))
 
 const StyledButton = styled.button`
-  background: white;
   border-radius: 25px;
   border: 0;
-  color: solid black;
   padding: 5px 15px;
   text-transform: "capitalize";
   font-size: 10px;
+  ${props => {
+    if (props.home) return `color:black; background: white;`
+    else return `color:black; background:white;`
+  }}
 `
 
 const Header = ({ siteTitle }) => {
@@ -34,17 +34,25 @@ const Header = ({ siteTitle }) => {
       <AppBar position="static" className="app-bar" color="inherit">
         <Toolbar style={{ zIndex: 500 }}>
           <Typography className={classes.title}>Mozilla Gujarat</Typography>
-          <Button className="button-text-class">
-            <Typography>home</Typography>
+          <Button component={Link} className="button-text-class">
+            <Link to="/">
+              <Typography>home</Typography>
+            </Link>
           </Button>
-          <Button className="button-text-class">
-            <Typography>about</Typography>
+          <Button component={Link} className="button-text-class">
+            <Link to="/">
+              <Typography>about</Typography>
+            </Link>
           </Button>
-          <Button className="button-text-class">
-            <Typography>FAQ</Typography>
+          <Button component={Link} className="button-text-class">
+            <Link to="/faq">
+              <Typography>FAQ</Typography>
+            </Link>
           </Button>
-          <Button className="button-text-class">
-            <Typography>events</Typography>
+          <Button component={Link} className="button-text-class">
+            <Link to="/">
+              <Typography>events</Typography>
+            </Link>
           </Button>
           <StyledButton
             className="margin-space"
