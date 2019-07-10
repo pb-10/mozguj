@@ -892,6 +892,16 @@
     prop-types "^15.7.2"
     react-is "^16.8.0"
 
+"@mdi/js@^3.7.95":
+  version "3.7.95"
+  resolved "https://registry.yarnpkg.com/@mdi/js/-/js-3.7.95.tgz#65a15b766db6873447ab88142e452f0b20b3b524"
+  integrity sha512-R0Xt8JCOxPurdAv1nCLg3mazRKT1W8uyNVCJHF6JjbfgZyTm/Ct+G/4Vu+NhdXfpr/me/1kZkyDNq3Lh/vKgkg==
+
+"@mdi/react@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@mdi/react/-/react-1.2.1.tgz#24279784e080728e953f3c1a71f49c64031dee47"
+  integrity sha512-1IRIVCT07vlLmaZjVtGfyfwCMivg/tCtPj0+r1BKrkoh9z4xLf+M1TD0LhjJPO+4+O0ibW+xrNRvf+boRRtX9A==
+
 "@mikaelkristiansson/domready@^1.0.9":
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/@mikaelkristiansson/domready/-/domready-1.0.9.tgz#b2b85d8ac7bb2797e577050b61aeaf1b26fbd906"
@@ -2475,6 +2485,11 @@ class-utils@^0.3.5:
     define-property "^0.2.5"
     isobject "^3.0.0"
     static-extend "^0.1.1"
+
+classnames@^2.2.6:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.2.6.tgz#43935bffdd291f326dad0a205309b38d00f650ce"
+  integrity sha512-JR/iSQOSt+LQIWwrwEzJ9uk0xfN3mTVYMwt1Ir5mUcSN6pU+V4zQFFaJsclJbPuAUQH+yfWef6tm7l1quW3C8Q==
 
 clean-dir@^1.0.3:
   version "1.0.3"

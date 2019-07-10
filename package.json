@@ -7,6 +7,9 @@
   "dependencies": {
     "@material-ui/core": "^4.1.2",
     "@material-ui/icons": "^4.2.1",
+    "@mdi/js": "^3.7.95",
+    "@mdi/react": "^1.2.1",
+    "classnames": "^2.2.6",
     "clean-dir": "^1.0.3",
     "gatsby": "^2.9.6",
     "gatsby-image": "^2.2.0",
