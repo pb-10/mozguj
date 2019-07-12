@@ -92,7 +92,7 @@ class Header extends React.Component {
                 </Link>
               </Button>
               <Button component={Link} className="button-text-class">
-                <Link to="/">
+                <Link to="/about">
                   <Typography>about</Typography>
                 </Link>
               </Button>
