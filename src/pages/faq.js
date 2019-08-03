@@ -3,8 +3,11 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import { SemiCircle, SemiCircleContainer } from "../components/circular"
-import { Grid, GridList, Typography } from "@material-ui/core"
-import Title from "../components/title"
+import { Grid, GridList } from "@material-ui/core"
+import PageHeadings from "../components/pageheadings"
+
+const desc =
+  "We get asked a lot of questions, here's an attempt to answering those."
 
 const FAQ = ({ data }) => (
   <Layout>
@@ -12,31 +15,8 @@ const FAQ = ({ data }) => (
       <SemiCircle color="#992c03" left />
     </SemiCircleContainer>
     <Grid container>
-      <Grid
-        item
-        md={4}
-        style={{
-          textAlign: "left",
-          paddingTop: "5rem",
-          color: "white",
-          zIndex: 500,
-        }}
-      >
-        <GridList cols={1} cellHeight={100}>
-          <Grid item>
-            <Typography variant="h5">
-              <Title color="#992c03">FAQ</Title>
-            </Typography>
-          </Grid>
-          <Grid item>
-            <Typography style={{ maxWidth: 250 }}>
-              We get asked a lot of questions, here's an attempt to answering
-              those.
-            </Typography>
-          </Grid>
-        </GridList>
-      </Grid>
-      <Grid item md={8}>
+      <PageHeadings title="FAQ" description={desc} color="#992c03" />
+      <Grid item md={8} sm={12}>
         <GridList cols={2} cellHeight={100}>
           {/* Mapping the fetched data to the Grid component */}
           {data.allFaqJson.edges.map(({ node }) => (

@@ -4,9 +4,8 @@ import Layout from "../components/layout"
 import { SemiCircle, SemiCircleContainer } from "../components/circular"
 import { Grid, GridList, Typography } from "@material-ui/core"
 import Title from "../components/title"
-import TextMobileStepper from "../components/slider"
 import Img from "gatsby-image"
-import { height, sizeHeight, fontSize } from "@material-ui/system"
+import PageHeadings from "../components/pageheadings"
 
 const Clubs = ({ data }) => (
   <Layout>
@@ -14,29 +13,11 @@ const Clubs = ({ data }) => (
       <SemiCircle color="#998b04" left />
     </SemiCircleContainer>
     <Grid container>
-      <Grid
-        item
-        md={4}
-        style={{
-          textAlign: "left",
-          paddingTop: "5rem",
-          color: "white",
-          zIndex: 500,
-        }}
-      >
-        <GridList cols={1} cellHeight={100}>
-          <Grid item>
-            <Typography variant="h5">
-              <Title color="#998b04">Clubs</Title>
-            </Typography>
-          </Grid>
-          <Grid item>
-            <Typography style={{ maxWidth: 250 }}>
-              We have a lot of clubs find yours
-            </Typography>
-          </Grid>
-        </GridList>
-      </Grid>
+      <PageHeadings
+        title="Clubs"
+        description="We have a lot of clubs find yours"
+        color="#998b04"
+      />
       <Grid item md={8} style={{ textAlign: "center" }}>
         <GridList cols={5} cellHeight={150}>
           {data.allClubsJson.edges.map(({ node }) => (

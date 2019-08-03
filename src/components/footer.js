@@ -12,6 +12,9 @@ const FooterPaper = styled.div`
   bottom: 0px;
   position: absolute;
   width: 100%;
+  @media (max-width: 960px) {
+    position: relative;
+  }
 `
 
 const Footer = () => (
